@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import seaImage from "~/assets/dark-ocean.webp";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Image
+  class="h-full w-full object-cover"
+  src={seaImage}
+  widths={widths}
+  sizes={sizes}
+  alt="image of the ocean"
+/>
